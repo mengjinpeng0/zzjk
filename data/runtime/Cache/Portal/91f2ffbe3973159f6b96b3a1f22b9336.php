@@ -88,7 +88,7 @@
          <span class="icon-bar"></span>
        </a>
        <a class="brand" style="margin:12px auto; font-size: 23px;" href="#"><span>锦州</span></a>
-       <a class="brand" href="/zzjk"><h3>自主驾考平台</h3></a>
+       <a class="brand" href="/zzjk/index.php"><h3>自主驾考平台</h3></a>
        <div class="nav-collapse collapse" id="main-menu">
 
 
@@ -219,7 +219,7 @@
 				<div class="s-mod-def"><span style="font-size:40px;"><i class="fa fa-heart"></i></span></div>
 				<div class="s-mod-cur"><span>学员在平台内，与第三方签订协议，如在后期出现矛盾或者纠纷，平台将协助学员维权和处理。</span></div>
 			</div>
-			<h2 class="font-large nospace text-center">权益保障</h2>
+			<a href="/zzjk/index.php?g=portal&m=article&a=index&id=7"><h2 class="font-large nospace text-center">权益保障</h2></a>
 		</li>
 	     </ul>
  </div>			
@@ -230,7 +230,7 @@
 
 	<div>
 
-		<h3 class="text-center">最新资讯</h3>
+		<a href="http://www.jzgajx.com/homepart/default2.aspx"><h3 class="text-center">最新资讯</h3></a>
 	</div>
 	<div class="row">
 		
@@ -285,7 +285,7 @@
 
 
                <div class="span5"> 
-        <h3 class="page-header"><i class="fa fa-car">&nbsp;</i>驾培机构展示</h3>
+        <h3 class="page-header"><i class="fa fa-car">&nbsp;</i>驾校信息</h3>
         <?php $list=sp_sql_posts_paged('cid:2;field:tid,post_title,smeta,post_excerpt,post_date,smeta;limit 6;'); ?>
 
        <?php if(is_array($list['posts'])): foreach($list['posts'] as $key=>$vo): ?><div class="span2">						          	             	 
@@ -328,36 +328,6 @@
 	</div>
 	
 
-<!--
-<div class="row">
-<?php  ?>
-
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=SOUMrALGjVkdoUQTUyQNB95oq26UTqk9"></script>
-<style>
-	#allmap{height: 500px}
-</style>
-<div id="allmap"></div>
-
-<script type="text/javascript">
-	// 百度地图API功能
-	var map = new BMap.Map("allmap");
-	var point = new BMap.Point(116.331398,39.897445);
-	map.centerAndZoom(point,13);
-  
-	function myFun(result){
-		var cityName = result.name;
-		map.setCenter(cityName);
-	//	alert("当前定位城市:"+cityName);
-	}
-	//获取当前城市名称
-	var myCity = new BMap.LocalCity();
-	myCity.get(myFun);
-</script>
-
-<iframe width="504" height="709" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://j.map.baidu.com/HoP8B"></iframe>    
-
-</div>
- -->
 
 <!-- 插件测试  前端使用方法   
 <?php echo hook('footer');?>

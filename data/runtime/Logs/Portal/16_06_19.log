@@ -1,0 +1,84 @@
+[ 2016-06-19T14:53:12+08:00 ] ::1 /zzjk/index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002155s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007432s ]
+SQL: SHOW COLUMNS FROM `jk_users` [ RunTime:0.0245s ]
+SQL: SELECT * FROM `jk_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0233s ]
+SQL: SHOW COLUMNS FROM `jk_terms` [ RunTime:0.0237s ]
+SQL: INSERT INTO `jk_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('0','其它新闻','','article','','','','list','article') [ RunTime:0.0242s ]
+SQL: UPDATE `jk_terms` SET `path`='0-5' WHERE ( term_id=5 ) [ RunTime:0.0229s ]
+
+[ 2016-06-19T22:22:58+08:00 ] ::1 /zzjk/index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002308s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007008s ]
+SQL: SHOW COLUMNS FROM `jk_users` [ RunTime:0.0241s ]
+SQL: SELECT * FROM `jk_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0239s ]
+SQL: SHOW COLUMNS FROM `jk_posts` [ RunTime:0.0242s ]
+SQL: SHOW COLUMNS FROM `jk_terms` [ RunTime:0.0248s ]
+SQL: SHOW COLUMNS FROM `jk_term_relationships` [ RunTime:0.0243s ]
+SQL: INSERT INTO `jk_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_title`,`post_keywords`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2016-06-19 22:22:18','1','0','0','权益保障','','权益保障内容','<p><a name=\"OLE_LINK5\"></a><a name=\"OLE_LINK4\"></a><span style=\"font-family:宋体\">第一条</span> <span style=\"font-family:宋体\">为了规范本市人民政府规章</span>(<span style=\"font-family:宋体\">以下简称“规章”</span>)<span style=\"font-family:宋体\">的制定程序，保证规章制定质量，根据《中华人民共和国立法法》、国务院《规章制定程序条例》和《法规规章备案条例》等有关法律、法规，结合本市实际，制定本规定。</span></p><p><span style=\"font-family:宋体\">第二条</span> <span style=\"font-family:宋体\">规章的立项、起草、审查、决定、公布、解释、修改、废止、备案和监督，适用本规定。</span></p><p><span style=\"font-family:宋体\">第三条</span> <span style=\"font-family:宋体\">制定规章，应当遵循下列原则：</span></p><p>(<span style=\"font-family:宋体\">一</span>)<span style=\"font-family:宋体\">遵循立法法确定的立法原则，符合上位法的规定</span>;</p><p>(<span style=\"font-family:宋体\">二</span>)<span style=\"font-family:宋体\">体现保障公民、法人和其他组织合法权益的原则，没有法律、法规依据，不得设定减损公民、法人和其他组织权利或者增加其义务的规范</span>;</p><p>(<span style=\"font-family:宋体\">三</span>)<span style=\"font-family:宋体\">体现行政机关的职权与责任相统一的原则，在赋予有关行政机关必要的职权的同时，应当规定其行使职权的条件、程序和应承担的责任</span>;</p><p>(<span style=\"font-family:宋体\">四</span>)<span style=\"font-family:宋体\">体现法治政府和服务型政府的要求和精简、统一、效能的原则，促进政府职能向经济调节、社会管理和公共服务转变。</span></p><p><span style=\"font-family:宋体\">第四条</span> <span style=\"font-family:宋体\">规章可以就下列事项作出规定：</span></p><p>(<span style=\"font-family:宋体\">一</span>)<span style=\"font-family:宋体\">为执行法律、法规的规定需要制定规章的事项</span>;</p><p>(<span style=\"font-family:宋体\">二</span>)<span style=\"font-family:宋体\">属于本市的具体行政管理事项。</span></p><p><span style=\"font-family:宋体\">制定规章，限于城乡建设与管理、环境保护、历史文化保护等方面的事项。</span></p><p><span style=\"font-family:宋体\">第五条</span> <span style=\"font-family:宋体\">规章的名称一般称“规定”、“办法”等，但不得称“条例”。</span></p><p><span style=\"font-family:宋体\">规章应当采用条文方式表述，用语准确、简洁，内容明确、具体，除内容复杂的外，一般不分章节。</span></p><p><span style=\"font-family:宋体\">第六条</span> <span style=\"font-family:宋体\">市人民政府应当加强对规章制定工作的领导。</span></p><p><span style=\"font-family:宋体\">市人民政府法制机构具体负责规章的制定工作，履行下列职责：</span></p><p>(<span style=\"font-family:宋体\">一</span>)<span style=\"font-family:宋体\">负责拟订年度规章制定计划草案</span>;</p><p>(<span style=\"font-family:宋体\">二</span>)<span style=\"font-family:宋体\">组织起草、审查、修改、协调、论证规章草案</span>;</p><p>(<span style=\"font-family:宋体\">三</span>)<span style=\"font-family:宋体\">负责规章报送备案工作</span>;</p><p>(<span style=\"font-family:宋体\">四</span>)<span style=\"font-family:宋体\">监督检查、评估规章的执行情况</span>;</p><p>(<span style=\"font-family:宋体\">五</span>)<span style=\"font-family:宋体\">组织协调、论证规章的修改、废止工作</span>;</p><p>(<span style=\"font-family:宋体\">六</span>)<span style=\"font-family:宋体\">提出规章解释的意见</span>;</p><p>(<span style=\"font-family:宋体\">七</span>)<span style=\"font-family:宋体\">法律、法规规定的其他职责。</span></p><p><span style=\"font-size:14px;font-family:宋体\">各县</span><span style=\"font-size:14px;font-family:&#39;Calibri&#39;,sans-serif\">(</span><span style=\"font-size:14px;font-family:宋体\">市</span><span style=\"font-size:14px;font-family:&#39;Calibri&#39;,sans-serif\">)</span><span style=\"font-size:14px;font-family:宋体\">区人民政府、市人民政府各部门以及有关单位应当按照职责分工，共同做好规章草案的起草、论证和其他相关工作。</span></p><p><br/></p>','2016-06-19 22:22:58','1','{\"thumb\":\"\"}') [ RunTime:0.0397s ]
+SQL: INSERT INTO `jk_term_relationships` (`term_id`,`object_id`) VALUES ('5','7') [ RunTime:0.0231s ]
+
+[ 2016-06-19T22:28:37+08:00 ] ::1 /zzjk/index.php?g=&m=article&a=do_like&id=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001858s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006019s ]
+SQL: SHOW COLUMNS FROM `jk_posts` [ RunTime:0.0236s ]
+SQL: SHOW COLUMNS FROM `jk_common_action_log` [ RunTime:0.0239s ]
+SQL: SELECT * FROM `jk_common_action_log` WHERE `user` = '2' AND `action` = 'Portal-Article-do_like' AND `object` = 'posts7' LIMIT 1   [ RunTime:0.0227s ]
+SQL: INSERT INTO `jk_common_action_log` (`user`,`action`,`object`,`count`,`last_time`,`ip`) VALUES ('2','Portal-Article-do_like','posts7',count+1,'1466346517','0.0.0.0') [ RunTime:0.0224s ]
+SQL: UPDATE `jk_posts` SET `post_like`=post_like+1 WHERE `id` = 7 [ RunTime:0.0218s ]
+
+[ 2016-06-19T22:28:39+08:00 ] ::1 /zzjk/index.php?g=&m=article&a=do_like&id=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001594s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005619s ]
+SQL: SHOW COLUMNS FROM `jk_posts` [ RunTime:0.0238s ]
+SQL: SHOW COLUMNS FROM `jk_common_action_log` [ RunTime:0.0238s ]
+SQL: SELECT * FROM `jk_common_action_log` WHERE `user` = '2' AND `action` = 'Portal-Article-do_like' AND `object` = 'posts7' LIMIT 1   [ RunTime:0.0233s ]
+SQL: UPDATE `jk_common_action_log` SET `count`=count+1,`last_time`='1466346519',`ip`='0.0.0.0' WHERE `user` = '2' AND `action` = 'Portal-Article-do_like' AND `object` = 'posts7' [ RunTime:0.0235s ]
+
+[ 2016-06-19T22:45:20+08:00 ] ::1 /zzjk/index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003197s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011741s ]
+SQL: SHOW COLUMNS FROM `jk_users` [ RunTime:0.0245s ]
+SQL: SELECT * FROM `jk_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0234s ]
+SQL: SHOW COLUMNS FROM `jk_posts` [ RunTime:0.0241s ]
+SQL: SHOW COLUMNS FROM `jk_terms` [ RunTime:0.0241s ]
+SQL: SHOW COLUMNS FROM `jk_term_relationships` [ RunTime:0.0240s ]
+SQL: INSERT INTO `jk_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_title`,`post_keywords`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2016-06-19 22:44:26','1','0','0','关于开展严重道路交通违法行为有奖举报活动的通告','','激发市民参与维护道路交通安全的积极性。','<p><span style=\"font-family:宋体\">为广泛收集严重道路交通安全违法行为线索，激发市民参与维护道路交通安全的积极性，根据《中华人民共和国道路交通安全法》及相关法律法规，锦州交警支队从即日起在全市范围内开展严重道路交通违法行为有奖举报活动，具体内容公布如下：</span></p><p><span style=\"font-family:宋体\">一、有奖举报的范围及奖励标准</span></p><p><span style=\"font-family:宋体\">（一）举报无驾驶资格的驾驶人驾驶摩托车、汽车，经查证属实的，每起奖励</span>50<span style=\"font-family:宋体\">元</span>-150<span style=\"font-family:宋体\">元。</span></p><p><span style=\"font-family:宋体\">（二）举报酒后、吸食（注射）毒品后驾驶机动车的驾驶人，经查证属实的，每起奖励</span>200<span style=\"font-family:宋体\">元。</span></p><p>&nbsp; <span style=\"font-family:宋体\">（三）举报未经公安机关批准擅自运输剧毒化学品的，经查证属实的，每起奖励</span>200<span style=\"font-family:宋体\">元。</span></p><p><span style=\"font-family:宋体\">（四）举报驾驶拼装的机动车或者已达报废标准的机动车上道路行驶的，每起奖励</span>200<span style=\"font-family:宋体\">元。</span></p><p><span style=\"font-family:宋体\">（五）举报拼装、出售不符合国家安全技术标准的汽车或已达报废标准的机动车的，每起奖励</span>200<span style=\"font-family:宋体\">元。</span></p><p><span style=\"font-family:宋体\">（六）举报营运客车、校车超员的，经查证属实的，每起奖励</span>20<span style=\"font-family:宋体\">元</span>-200<span style=\"font-family:宋体\">元。</span></p><p><span style=\"font-family:宋体\">（七）举报货运机动车达到或超过核定载质量</span>30%<span style=\"font-family:宋体\">的，经查证属实的，每起奖励</span>200<span style=\"font-family:宋体\">元。</span></p><p><span style=\"font-family:宋体\">（八）举报未经批准擅自设置、移动、占用、损毁交通标志、交通标线、交通护栏、交通信号灯、交通监控等道路交通安全设施，经查证属实的，每起奖励</span>200<span style=\"font-family:宋体\">元。</span></p><p><span style=\"font-family:宋体\">（九）举报上路行驶的机动车故意挪用、遮挡、污损或者不按规定安装、悬挂机动车号牌的，每起奖励</span>20<span style=\"font-family:宋体\">元</span>-300<span style=\"font-family:宋体\">元。</span></p><p><span style=\"font-family:宋体\">二、注意事项</span></p><p><span style=\"font-family:宋体\">（一）举报人必须实名举报，举报的道路交通违法行为应当客观真实，对其举报的道路交通违法行为的真实性负责，不得捏造、歪曲事实，不得诬告、陷害他人。交警部门将对举报人的姓名等信息予以保密。</span></p><p><span style=\"font-family:宋体\">（二）举报人须向交警部门提供违法车辆的车型、车号、举报的违法行为、行驶路线、时间、地点等必要信息。</span></p><p><span style=\"font-family:宋体\">（三）对举报严重道路交通违法行为的个人</span>,<span style=\"font-family:宋体\">所举报的情况经调查情况属实，且交警部门事先并未掌握监控等相关证据的，都可兑现奖励。</span></p><p><span style=\"font-family:宋体\">（四）同一起道路交通违法行为被多人举报，且内容相同的，奖励第一举报人。</span></p><p><span style=\"font-family:宋体\">（五）举报人接到领奖通知后，应当在</span>30<span style=\"font-family:宋体\">日内凭举报人有效证件到辖区大队领取奖金。逾期未领奖金或（由于）举报人自身原因无法告知举报人的，视为放弃权利。</span></p><p><span style=\"font-family:宋体\">（六）对于骗取、冒领奖励资金，打击报复举报人的，将依法追究相关人员的法律责任。</span></p><p><span style=\"font-family:宋体\">以上内容具体执行细节由锦州市公安局交通警察支队负责解释，举报电话（市区：</span>0416-3880127<span style=\"font-family:宋体\">，</span>0416-3880119<span style=\"font-family:宋体\">；县（市）：凌海</span>0416-8123665<span style=\"font-family:宋体\">，北镇</span>0416-6622567<span style=\"font-family:宋体\">，黑山</span>0416-5522608<span style=\"font-family:宋体\">，义县</span>0416-7733300<span style=\"font-family:宋体\">）。</span></p><p><br/></p>','2016-06-19 22:45:19','1','{\"thumb\":\"\"}') [ RunTime:0.0237s ]
+SQL: INSERT INTO `jk_term_relationships` (`term_id`,`object_id`) VALUES ('1','8') [ RunTime:0.0232s ]
+
+[ 2016-06-19T22:50:46+08:00 ] ::1 /zzjk/index.php?g=&m=AdminPost&a=recommend&recommend=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002119s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007679s ]
+SQL: SHOW COLUMNS FROM `jk_users` [ RunTime:0.0232s ]
+SQL: SELECT * FROM `jk_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0227s ]
+SQL: SHOW COLUMNS FROM `jk_posts` [ RunTime:0.0234s ]
+SQL: SHOW COLUMNS FROM `jk_terms` [ RunTime:0.0231s ]
+SQL: SHOW COLUMNS FROM `jk_term_relationships` [ RunTime:0.0225s ]
+SQL: SELECT `object_id` FROM `jk_term_relationships` WHERE ( tid in (8) )  [ RunTime:0.0224s ]
+SQL: UPDATE `jk_posts` SET `recommended`='1' WHERE ( id in (8) ) [ RunTime:0.0219s ]
+
+[ 2016-06-19T22:50:58+08:00 ] ::1 /zzjk/index.php?g=&m=AdminPost&a=top&top=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009267s ]
+SQL: SHOW COLUMNS FROM `jk_users` [ RunTime:0.0245s ]
+SQL: SELECT * FROM `jk_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0237s ]
+SQL: SHOW COLUMNS FROM `jk_posts` [ RunTime:0.0246s ]
+SQL: SHOW COLUMNS FROM `jk_terms` [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `jk_term_relationships` [ RunTime:0.0235s ]
+SQL: SELECT `object_id` FROM `jk_term_relationships` WHERE ( tid in (8) )  [ RunTime:0.0233s ]
+SQL: UPDATE `jk_posts` SET `istop`='1' WHERE ( id in (8) ) [ RunTime:0.0229s ]
+

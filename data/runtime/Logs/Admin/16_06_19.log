@@ -1,0 +1,79 @@
+[ 2016-06-19T14:49:25+08:00 ] ::1 /zzjk/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002515s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008207s ]
+SQL: SHOW COLUMNS FROM `jk_users` [ RunTime:0.0256s ]
+SQL: SELECT * FROM `jk_users` WHERE `user_login` = 'zzjk' LIMIT 1   [ RunTime:0.0237s ]
+
+[ 2016-06-19T14:49:44+08:00 ] ::1 /zzjk/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002207s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008969s ]
+
+[ 2016-06-19T14:49:49+08:00 ] ::1 /zzjk/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002255s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009354s ]
+
+[ 2016-06-19T14:49:53+08:00 ] ::1 /zzjk/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002242s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007747s ]
+SQL: SHOW COLUMNS FROM `jk_users` [ RunTime:0.0244s ]
+SQL: SELECT * FROM `jk_users` WHERE `user_login` = 'mengadmin' LIMIT 1   [ RunTime:0.0234s ]
+
+[ 2016-06-19T14:50:04+08:00 ] ::1 /zzjk/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002181s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008233s ]
+SQL: SHOW COLUMNS FROM `jk_users` [ RunTime:0.0279s ]
+SQL: SELECT * FROM `jk_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `jk_role_user` [ RunTime:0.0379s ]
+SQL: SELECT `role_id` FROM jk_role_user a INNER JOIN jk_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0338s ]
+SQL: UPDATE `jk_users` SET `user_login`='admin',`user_pass`='c9a52fa9a65d84a9bdf17917b97d1a1db9a9b4f90968f8d7',`user_nicename`='admin',`user_email`='754527456@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='0.0.0.0',`last_login_time`='2016-06-19 14:50:04',`create_time`='2016-05-06 12:57:30',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0267s ]
+
+[ 2016-06-19T14:50:54+08:00 ] ::1 /zzjk/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002024s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007297s ]
+
+[ 2016-06-19T14:51:02+08:00 ] ::1 /zzjk/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001872s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007420s ]
+SQL: SHOW COLUMNS FROM `jk_users` [ RunTime:0.0236s ]
+SQL: SELECT * FROM `jk_users` WHERE `user_login` = 'zzjk' LIMIT 1   [ RunTime:0.0229s ]
+
+[ 2016-06-19T14:51:38+08:00 ] ::1 /zzjk/index.php?g=Admin&m=User&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002015s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007841s ]
+SQL: SHOW COLUMNS FROM `jk_users` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `jk_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0228s ]
+SQL: SHOW COLUMNS FROM `jk_users` [ RunTime:0.0223s ]
+SQL: SHOW COLUMNS FROM `jk_role` [ RunTime:0.0221s ]
+SQL: SELECT * FROM `jk_users` WHERE `user_login` = 'lkadmin' LIMIT 1   [ RunTime:0.0221s ]
+SQL: SELECT * FROM `jk_users` WHERE `user_email` = '1@1.com' LIMIT 1   [ RunTime:0.0218s ]
+SQL: INSERT INTO `jk_users` (`user_login`,`user_pass`,`user_email`) VALUES ('lkadmin','c9a52fa9a65d9754ee533f25bac92e38a901ec9fb309f8d7','1@1.com') [ RunTime:0.0215s ]
+SQL: SHOW COLUMNS FROM `jk_role_user` [ RunTime:0.0220s ]
+SQL: INSERT INTO `jk_role_user` (`role_id`,`user_id`) VALUES ('2','6') [ RunTime:0.0213s ]
+
+[ 2016-06-19T14:52:00+08:00 ] ::1 /zzjk/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003367s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011724s ]
+SQL: SHOW COLUMNS FROM `jk_users` [ RunTime:0.0263s ]
+SQL: SELECT * FROM `jk_users` WHERE `user_login` = 'lkadmin' LIMIT 1   [ RunTime:0.0228s ]
+SQL: SHOW COLUMNS FROM `jk_role_user` [ RunTime:0.0230s ]
+SQL: SELECT `role_id` FROM jk_role_user a INNER JOIN jk_role as b on a.role_id =b.id  WHERE `user_id` = '6' AND `status` = 1  [ RunTime:0.0224s ]
+SQL: UPDATE `jk_users` SET `user_login`='lkadmin',`user_pass`='c9a52fa9a65d9754ee533f25bac92e38a901ec9fb309f8d7',`user_nicename`='',`user_email`='1@1.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='0.0.0.0',`last_login_time`='2016-06-19 14:52:00',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '6' [ RunTime:0.0255s ]
+

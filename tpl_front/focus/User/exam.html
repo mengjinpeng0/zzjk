@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{$site_name}</title>
+<meta name="keywords" content="{$site_seo_keywords}" />
+<meta name="description" content="{$site_seo_description}">
+<meta name="author" content="ThinkCMF">
+<tc_include file="Public:head" />
+
+
+<style>
+	.content>label{font-size:18px;}
+	.solution1{}
+</style>
+
+</head>
+
+<body class="body-white" id="top">
+	<tc_include file="Public:nav" />
+
+		<div class="container tc-main">
+                <div class="row">
+                    <div class="span3">
+	                    <tc_include file="Public:usernav"/>
+                    </div>
+                    <div class="span9">
+                           <div class="tabs">
+                               <ul class="nav nav-tabs">
+                                   <li class="active">
+                                   	<a href="#one" data-toggle="tab"><i class="fa fa-star"></i> 科目一模拟考试</a>
+                                   </li>
+                                   <li >
+                                   	<a href="#two" data-toggle="tab"><i class="fa fa-star"></i> 科目四模拟考试</a>
+                                   </li>
+                               </ul>
+                               <div class="tab-content">
+                                   <div class="tab-pane active" id="one">
+                                   		
+									    <foreach name="rs3" item="vo">
+									    <div class="pancel">
+									      <div class="page-header">
+									      	<label for=""><h2>题目:{$vo.question}</h2></label>
+									      </div>
+                                      <div class="content" style="min-height:200px;"> 
+
+                                           <span style="float:right;"><img src="{$vo.url}" 
+                                           	style="max-width:380px;max-height:220px;"></span>
+
+									        <label class="radio-inline" >
+                        	                <input type="radio" name="choose.answer" id="answer1" value="A" checked>A
+                        	                {$vo.item1}
+                                            </label>
+									         <label class="radio-inline">
+                        	                <input type="radio" name="choose.answer" id="answer2" value="B" checked>B
+                        	                {$vo.item2}
+                                            </label>
+
+                                         <if condition="empty($vo['item3'])">
+							            	
+							            <else/>
+							            	 <label class="radio-inline">
+                        	                <input type="radio" name="choose.answer" id="answer3" value="C" checked>C
+                        	                {$vo.item3}
+                                            </label>
+                                             <label class="radio-inline">
+                        	                <input type="radio" name="choose.answer" id="answer4" value="D" checked>D
+                        	                {$vo.item4}
+                                            </label>
+							            </if>
+                                        <br><br> 
+
+
+                                      <!--   <button id="show1" class="shows btn-primary">点我查看答案</button> -->
+                                        <div id="solution1">
+                                        	<if condition="$vo['answer'] eq 1"><span>答案：A</span>
+                                        		
+                                             <elseif condition="$vo['answer'] eq 2"/><span>答案：B</span>
+                                             <elseif condition="$vo['answer'] eq 3"/><span>答案：C</span>
+                                              <else />
+                                              <span>答案：D</span>
+                                        	</if>
+                                          <div>
+                                          	解析：{$vo.explains}
+                                          </div>
+                                        </div>
+                                       
+                                      </div>
+									      
+									  </div>
+									     
+									    </foreach>    
+                    </div>
+                               
+                                
+                        <div class="tab-pane" id="two">
+                      <foreach name="rs4" item="vo">
+                      <div class="pancel">
+                        <div class="page-header">
+                          <label for=""><h2>题目:{$vo.question}</h2></label>
+                        </div>
+                                      <div class="content" style="min-height:200px;"> 
+
+                                           <span style="float:right;"><img src="{$vo.url}" 
+                                            style="max-width:380px;max-height:220px;"></span>
+
+                          <label class="radio-inline" >
+                                          <input type="radio" name="choose.answer" id="answer1" value="A" checked>A
+                                          {$vo.item1}
+                                            </label>
+                           <label class="radio-inline">
+                                          <input type="radio" name="choose.answer" id="answer2" value="B" checked>B
+                                          {$vo.item2}
+                                            </label>
+
+                                         <if condition="empty($vo['item3'])">
+                            
+                          <else/>
+                             <label class="radio-inline">
+                                          <input type="radio" name="choose.answer" id="answer3" value="C" checked>C
+                                          {$vo.item3}
+                                            </label>
+                                             <label class="radio-inline">
+                                          <input type="radio" name="choose.answer" id="answer4" value="D" checked>D
+                                          {$vo.item4}
+                                            </label>
+                          </if>
+                                        <br><br> 
+
+
+                                      <!--   <button id="show1" class="shows btn-primary">点我查看答案</button> -->
+                                        <div id="solution1">
+                                         答案：{$vo['answer']} 
+                                         <br>
+                                         解析：{$vo.explains}
+                                          </div>
+                                        </div>
+                                       
+                                      </div>
+                    
+                      </foreach> 
+                                   	 
+                                   </div>
+                              	</div>					
+                           </div>
+                    </div>
+                </div>
+
+		<tc_include file="Public:footer" />
+
+	</div>
+	<!-- /container -->
+
+	<tc_include file="Public:scripts" />
+
+	  <script type="text/javascript">
+                                           $(document).ready(function(){
+                                            ('#show1').click(function(){
+                                            	('#solution1').toggle();
+                                            });
+                                          });
+      </script>
+</body>
+</html>

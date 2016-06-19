@@ -1,0 +1,81 @@
+body{ font-family:"微软雅黑", Arial, sans-serif;} #main{border:none; background:none;}
+body,ul,li,h1,h2,h3,p,form{margin:0;padding:0;}body{background:#fbfbfb;color:#444;font-size:14px;}
+
+a{color:#444;text-decoration:none;}a:hover{color:red;}
+
+#tagscloud{width:240px;height:250px;position:relative;font-size:12px;color:#333;
+	margin-top:10px;
+	text-align:center;}
+#tagscloud a{position:absolute;top:0px;left:0px;color:#333;font-family:Arial;text-decoration:none;}
+#tagscloud a:hover{color:#fff;padding:5px;display:block;background:#D02F53;}
+#tagscloud a.tagc1{margin:0 10px 15px 0;line-height:18px;width:65px;text-align:center;font-size:12px;padding:1px 5px;white-space:nowrap;display:inline-block;border-radius:3px;background:#666;color:#fff;}
+#tagscloud a.tagc2{margin:0 10px 15px 0;line-height:18px;width:60px;text-align:center;font-size:12px;padding:1px 5px;white-space:nowrap;display:inline-block;border-radius:3px;background:#F16E50;color:#fff;}
+#tagscloud a.tagc5{margin:0 10px 15px 0;line-height:18px;width:70px;text-align:center;font-size:12px;padding:1px 5px;white-space:nowrap;display:inline-block;border-radius:3px;background:#006633;color:#fff;}
+
+	
+@charset "utf-8";
+*{margin:0;padding:0;-webkit-text-size-adjust:none;}
+body{background:#fff;font-size:12px;color:#555;font-family:Tahoma,"微软雅黑", Geneva, sans-serif;background:#f5f5f5;}
+a{color:#555;text-decoration:none;}
+a:hover{color:#c00;text-decoration:underline;}
+img{border:none;}
+
+li{list-style:none;}
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+* html .clearfix             {zoom: 1;} /* IE6 */
+*:first-child+html .clearfix {zoom: 1;} /* IE7 */
+
+.w1100{width:1100px;margin:0 auto;}
+.s-mod{margin:20px auto 0;position:relative;}
+.s-mod-loding{text-align:center;}
+.s-mod ul{display:none;}
+.s-mod-item{display:block;position:absolute;}
+.s-mod-wrap{position:relative;overflow:hidden;}
+.s-mod-def{position:absolute;left:0;top:0;z-index:1;
+	color:#fff;font-size:18px;line-height:25px;text-align:center;
+     width: 100%}
+.s-mod-def span{display:block;}
+.s-mod-cur{position:absolute;left:0;top:0;z-index:2;padding:0 12px;color:#fff;line-height:18px;}
+.s-mod-cur span{display:block;}
+
+.header-top{margin-top: 77px;}
+
+.s-mod-item>a{text-decoration:none ;}
+	
+.tabbed_content{
+  margin-top:10px;
+  background-color:none;
+  _width:expression((document.documentElement.clientWidth||document.body.clientWidth)>960?"960px":"");}
+/* 
+.tabs .tab_item{display:block;float:left;width:50%;color:#ffffff;text-align:center;z-index:200;position:relative;cursor:pointer;color:#000;font-weight:bold;overflow:hidden;}
+.tabs{width:100%;height:45px;line-height:45px;position:relative;background:#F3F3F3;border-bottom:solid 1px #CCC;overflow:hidden;}
+.tabs h2{padding-left:10px;float:left;}
+.tabs .moving_bg{width:50%;_width:15%;height:43px;border-bottom:solid 2px #0b67aa;
+  background-color:#FFF;position:absolute;z-index:190;left:0;background-position:bottom left;
+  background-repeat:no-repeat;font-weight:bold;overflow:hidden;}
+.tabslider{width:200%;}
+.tabs .tab_item:hover{color:#0b67aa;font-weight:bold;}
+.tabbed_content .slide_content{overflow:hidden;background-color:none;position:relative;width:100%;}
+ */
+
+.tabslider>ul{float:left;margin:0px; background-color: white;
+  width:50%;text-align:left;-ms-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;/* padding和border被包含在定义的width和height之内 */background:none;}
+
+.tabslider ul a{margin-bottom:10px;display:block;color:#000;text-decoration:none;}
+.tabslider ul a:hover{color:#00;text-decoration:underline;}
+.tabslider .hidden div{padding:10px 10px;_padding:10px 0;*padding:10px 0;font-size:16px;}
+.tabslider ul li span,.tabslider .hidden div span{display:block;width:100%;color:#C5C5C5;text-align:right;font-size:0.875em;}
+.tabslider ul li span em,.tabslider .hidden div em{float:left;font-style:normal;}
+.tabslider ul li{padding:10px;border-bottom:solid 1px #EFEFEF;}
+
+.row-fluid>.span4> a{text-align: center;}
+
+.tab-content{overflow: visible;}
+.uploaded_avatar_area{
+	margin-top: 20px;
+}
+.uploaded_avatar_btns{
+	margin-top: 20px;
+}
+.uploaded_avatar_area .uploaded_avatar_btns{display: none;}
+

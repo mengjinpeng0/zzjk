@@ -61,7 +61,7 @@ class IndexController extends HomeBaseController {
     
     public function step3(){
 
-
+        $this->success("提交个人信息成功！");
     	$this->display(":step3");
     }
     

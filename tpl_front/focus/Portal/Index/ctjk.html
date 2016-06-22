@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>{$post_title} {$site_name} </title>
+		<meta name="keywords" content="{$post_keywords}" />
+		<meta name="description" content="{$post_excerpt}">
+		<tc_include file="Public:head" />
+		<style>
+			#article_content img{height:auto !important}
+		</style>
+	</head>
+<body class="">
+<tc_include file="Public:nav" />
+<div class="container tc-main">
+	<div class="row">
+		<div class="span12">
+			
+			<div class="tc-box first-box article-box">
+		    	<center>
+		    	<img src="__STATICS__/images/ctjk.jpg" alt="">
+                </center>
+                <br>
+		    	{:Comments("posts",$id)}
+		    </div>
+		    
+		</div>
+	
+        	
+		
+		
+	</div>
+              
+<tc_include file="Public:footer"/>
+</div>
+
+<tc_include file="Public:scripts"/>
+</body>
+</html>

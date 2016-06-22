@@ -1,0 +1,6 @@
+[ 2016-06-22T07:40:11+08:00 ] ::1 /zzjk/index.php?g=&m=index&a=dljk
+ERR: 模板不存在:tpl_front/focus/Portalindex/dljk.html
+
+[ 2016-06-22T07:40:50+08:00 ] ::1 /zzjk/index.php?g=&m=index&a=dljk
+ERR: 模板不存在:tpl_front/focus/Portal/Index/dljk.html
+

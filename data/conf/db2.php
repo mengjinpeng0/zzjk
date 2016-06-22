@@ -1,14 +1,12 @@
 <?php
 
-/**
- * 配置文件
- */
+
 return array(
     'DB_TYPE' => 'mysql',
-    'DB_HOST' => '127.0.0.1',
+    'DB_HOST' => '123.57.161.165',
     'DB_NAME' => 'zzjk',
-    'DB_USER' => 'root',
-    'DB_PWD' => 'root',
+    'DB_USER' => 'zzx3webuser',
+    'DB_PWD' => 'zzx3webpwd',
     'DB_PORT' => '3306',
     'DB_PREFIX' => 'jk_',
     //密钥

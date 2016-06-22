@@ -35,24 +35,30 @@
 					<li><em>4</em>在线支付</li>
 				</ul>
 			</div>
-			<div class="server">
-			<form action="/zzjk/index.php?g=signup&a=step3" method="post">
+			<div class="server"><center>
+			<form action="/zzjk/index.php?g=signup&a=step3" class="J_ajaxForm" method="post">
 					 <div class="tab-content">
                                    <div class="tab-pane active" id="one">
-                                   		<?php if(empty($avatar)): ?><img src="/zzjk/tpl_front/focus//Public/images/headicon_128.png" class="headicon"/>
-							            <?php else: ?>
-							            	<img src="<?php echo sp_get_user_avatar_url($avatar);?>?t=<?php echo time();?>" class="headicon"/><?php endif; ?>
+                                   	
                                     
-                                   		身份证：<input type="file" onchange="avatar_upload(this)" id="avatar_uploder"  name="file" placeholder="上传身份证" /><br>
-                                   		真实姓名：<input type="text" name="uname" /> <br>
-                                   		电话号码：<input type="text" name="uphone" />
-                             
+                                   		<label class="control-label" >身份证：<input type="file"  name="file" placeholder="上传身份证" /><br></label>
+                                   		<label class="control-label" >真实姓名：<input type="text" name="uname" /> <br></label>
+                                   		<label class="control-label" >电话号码：<input type="text" name="uphone" />
+                                         </label>
                                    </div>
                       </div>
+			                    <div class="control-group">
+                                   				<label class="control-label" for="input-sex">性&nbsp;&nbsp;&nbsp;别：
+                                   					<?php $sexs=array("1"=>"女","2"=>"男"); ?>
+                                   					<select id="input-sex" name="sex">
+                                   						<?php if(is_array($sexs)): foreach($sexs as $key=>$vo): $sexselected=$key==$sex?"selected":""; ?>
+                                   							<option value="<?php echo ($key); ?>" <?php echo ($sexselected); ?>><?php echo ($vo); ?></option><?php endforeach; endif; ?>
+                                   					</select>
+                                   			</label>
+                                </div>
 
-			
-				<button type="submit" class="btn btn-primary">下一步</button>
-			</form>
+			<button type="submit" class="btn btn-primary J_ajax_submit_btn">下一步</button>
+			</form></center>	
 			</div>
 			</div>
 			
@@ -179,7 +185,7 @@ $(function() {
 				data:{},
 				success: function (data, status){
 					if(data.status==1){
-						$("#avatar_uploder").hide();
+					/*	$("#avatar_uploder").hide();
 						var $uploaded_area=$(".uploaded_avatar_area");
 						$uploaded_area.find("img").remove();
 						var $img=$("<img/>").attr("src","/zzjk/data/upload/avatar/"+data.data.file);
@@ -190,7 +196,7 @@ $(function() {
 					    	setSelect: [ 0, 0, 100, 100 ],
 					    	onSelect: function(c){
 					    		$img.data("area",c);
-					    	}
+					    	}*/
 					    });
 						
 					}else{

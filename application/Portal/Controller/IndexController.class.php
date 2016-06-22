@@ -27,6 +27,23 @@ class IndexController extends HomeBaseController {
     	$this->display(':showmap');
     }
     
+   public function dljk(){
+   
+   $this->display('dljk');
+   }
+
+   public function zzjk(){
+   
+   $this->display('zzjk');
+   }
+
+   public function ctjk(){
+   
+
+   $this->display('ctjk');
+   }
+
+
 }
 
 

@@ -1,0 +1,12 @@
+[ 2016-06-22T08:07:26+08:00 ] ::1 /zzjk/index.php?g=comment&m=comment&a=post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001671s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005728s ]
+
+[ 2016-06-22T08:07:28+08:00 ] ::1 /zzjk/index.php?g=comment&m=comment&a=post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001649s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008423s ]
+

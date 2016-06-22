@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en" class="feedback">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>{$name} {$site_name}</title>
+		<link rel="stylesheet" type="text/css" href="__MPATH__/mui/css/mui.css" />
+		<link rel="stylesheet" type="text/css" href="__MPATH__/mui/css/app.css" />
+		
+		<link rel="stylesheet" href="__MPATH__/mui/css/mui.picker.css"  />
+		<link rel="stylesheet" href="__MPATH__/mui/css/mui.poppicker.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />-->
+		<style>
+		
+			h5.mui-content-padded {
+				margin-left: 3px;
+				margin-top: 20px !important;
+			}
+			h5.mui-content-padded:first-child {
+				margin-top: 12px !important;
+			}
+			.ui-alert {
+				text-align: center;
+				padding: 20px 10px;
+				font-size: 16px;
+			}
+.mui-bar-nav .mui-icon {
+    margin-right: -10px;
+    margin-left: -10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.mui-bar-nav .mui-icon {
+    font-size: 24px;
+    position: relative;
+    z-index: 20;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.mui-bar-nav .mui-title {
+    right: 40px;
+    left: 40px;
+    display: inline-block;
+    overflow: hidden;
+    width: auto;
+    margin: 0;
+    text-overflow: ellipsis;
+}
+.mui-bar-nav {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    height: 44px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-bottom: 0;
+    background-color: #f7f7f7;
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.85);
+    box-shadow: 0 0 1px rgba(0,0,0,.85);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+		</style>
+	</head>
+
+	<body>
+		<header  class="mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1);"></a>
+			<h1 class="mui-title">在线加盟</h1>
+		</header>
+
+   <div style="max-width:720px;margin:0px auto;">
+ 
+		<br>
+		
+       <div class="mui-content">
+<br><br>
+      <div class="title">
+				维鲜科技-加盟流程
+	  </div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						
+						<div class="mui-media-body">
+							填写申请
+							<p class='mui-ellipsis'>在线填写申请表,或直接拨打电话:400-833-9920</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+						<div class="mui-media-body">
+							审核与交流
+							<p class='mui-ellipsis'>总部进行报名的审核、并及时联系申请人.</p>
+						</div>
+				</li>
+				<li class="mui-table-view-cell mui-media">	
+				        <div class="mui-media-body">
+							考察与评估
+							<p class='mui-ellipsis'>到总部考察,了解相关运营程序,双方进行风险评估</p>
+						</div>
+				</li>
+				<li class="mui-table-view-cell mui-media">	
+				        <div class="mui-media-body">
+							资格审核
+							<p class='mui-ellipsis'>申请人资格审核阶段,官方将全面审核资质</p>
+						</div>
+				</li>
+				<li class="mui-table-view-cell mui-media">	
+				        <div class="mui-media-body">
+							签署合同
+							<p class='mui-ellipsis'>双方进行意见交换，并签署合同付款</p>
+						</div>
+				</li>
+				<li class="mui-table-view-cell mui-media">	
+				        <div class="mui-media-body">
+							培训运营
+							<p class='mui-ellipsis'>场前培训，终端交付，入场辅导，正式运营</p>
+						</div>
+				</li>
+
+			</ul>
+<br>
+            <center> 
+				<span class="mui-badge mui-badge-danger" style="margin:10px 30px font-size:1.3em;">在线报名 Join Us</span>		
+	        </center>
+<br>  
+<form class="mui-input-group" method="post" action="{:U('api/guestbook/addmsg')}" onsubmit="return check()">
+                     
+					
+					<div class="mui-input-row">
+						<label>姓名：</label>
+						<input type="text" class="mui-input-clear" id="name" placeholder="输入姓名" name="full_name">
+					</div>
+					<div class="mui-input-row">
+						<label>手机：</label>
+						<input type="text" class="mui-input-clear" id="phone" name="email" placeholder="输入手机号">
+					</div>
+
+				<div style="display:none;">
+				<h5 class="mui-content-padded">普通示例</h5>
+				<button id='showUserPicker' class="mui-btn mui-btn-block" type='button'>一级选择示例 ...</button>
+				<div id='userResult' class="ui-alert"></div>
+				<h5 class="mui-content-padded">级联示例</h5>
+				<button id='showCityPicker' class="mui-btn mui-btn-block" type='button'>二级联动示例 ...</button>
+				<div id='cityResult' class="ui-alert"></div>
+				</div>
+				<button id='showCityPicker3' class="mui-btn mui-btn-block" type='button'>点击选择省市</button>
+				<div id='cityResult3' class="ui-alert" value=""></div>
+                  <input type="hidden" name="city" id="paddr" value=""/>
+
+				   <div class="mui-input-row">
+						<label>区域:</label>
+						<input type="text" class="mui-input-clear" id="daddr" name="area" placeholder="输入街道信息" >
+					</div>
+               
+                  <div class="mui-input-row">
+						<label>所在行业:</label>
+						<input type="text" class="mui-input-clear" id="daddr" name="msg" placeholder="输入所在行业" >
+					</div>
+			       
+
+          </div>
+			<p>留言</p>
+			<div class="row mui-input-row">
+				<textarea id='question' class="mui-input-clear question" name="resource" placeholder="请描述你的资源和优势..."></textarea>
+			</div>
+			
+			<p></p>
+			<center><button id='submit' type="submit"   class="mui-btn mui-btn-green" >提交资料</button>
+			</center>
+
+</form>
+
+<script src="__MPATH__/mui/js/jquery-1.7.1.js"></script>
+<script type="text/javascript">
+
+
+  function check() {
+         var vname = document.getElementById("name");
+         if (vname.value == '') {
+         	alert("请填写您的姓名");
+         	return false;
+         };
+         var vphone = document.getElementById("phone");
+         if (vphone.value=='') {
+         	alert("请填写手机号");
+         	return false;
+         };
+         var vaddr = document.getElementById("cityResult3");
+
+         var vdaddr = document.getElementById("daddr");
+          if (vdaddr.value=='') {
+         	alert("请填写详细地址");
+         	return false;
+         };
+
+       }
+
+</script>
+		
+</div>
+	<br>
+		<script src="__MPATH__/mui/js/mui.min.js"></script>
+		<script src="__MPATH__/mui/js/mui.picker.js"></script>
+		<script src="__MPATH__/mui/js/mui.poppicker.js"></script>
+		<script src="__MPATH__/mui/js/city.data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="__MPATH__/mui/js/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+
+
+		<script>
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					//普通示例
+					var userPicker = new $.PopPicker();
+					userPicker.setData([{
+						value: 'ywj',
+						text: '董事长 叶文洁'
+					}, {
+						value: 'aaa',
+						text: '总经理 艾AA'
+					}, {
+						value: 'lj',
+						text: '罗辑'
+					}, {
+						value: 'ymt',
+						text: '云天明'
+					}, {
+						value: 'shq',
+						text: '史强'
+					}, {
+						value: 'zhbh',
+						text: '章北海'
+					}, {
+						value: 'zhy',
+						text: '庄颜'
+					}, {
+						value: 'gyf',
+						text: '关一帆'
+					}, {
+						value: 'zhz',
+						text: '智子'
+					}, {
+						value: 'gezh', 
+						text: '歌者'
+					}]);
+					var showUserPickerButton = doc.getElementById('showUserPicker');
+					var userResult = doc.getElementById('userResult');
+					showUserPickerButton.addEventListener('tap', function(event) {
+						userPicker.show(function(items) {
+							userResult.innerText = JSON.stringify(items[0]);
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+					//-----------------------------------------
+					//级联示例
+					var cityPicker = new $.PopPicker({
+						layer: 2
+					});
+					cityPicker.setData(cityData);
+					var showCityPickerButton = doc.getElementById('showCityPicker');
+					var cityResult = doc.getElementById('cityResult');
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker.show(function(items) {
+							cityResult.innerText = "你选择的城市是:" + items[0].text + " " + items[1].text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+					//-----------------------------------------
+					//					//级联示例
+					var cityPicker3 = new $.PopPicker({
+						layer: 3
+					});
+					cityPicker3.setData(cityData3);
+					var showCityPickerButton = doc.getElementById('showCityPicker3');
+					var cityResult3 = doc.getElementById('cityResult3');
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker3.show(function(items) {
+							cityResult3.innerText = "城市:" + (items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
+							doc.getElementById('paddr').value = cityResult3.innerText;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+				});
+			})(mui, document);
+		</script>
+	</body>
+
+</html>

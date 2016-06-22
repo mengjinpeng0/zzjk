@@ -1,0 +1,161 @@
+[ 2016-06-22T07:16:00+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001909s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005488s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T07:40:10+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001998s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006821s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T08:00:32+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002080s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015139s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T08:06:35+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001776s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009010s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T08:06:38+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002520s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.007284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016950s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T08:07:10+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001387s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004795s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T08:07:12+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003829s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017373s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T08:10:35+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003082s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018851s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T08:11:19+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002212s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.007397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011641s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T08:12:29+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002444s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007592s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T08:16:20+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011472s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T08:18:29+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002306s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007792s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T08:21:05+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006401s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023153s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T08:22:42+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001779s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006167s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T08:23:18+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006544s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T15:57:14+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002033s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006842s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T15:57:30+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001713s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009647s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T15:57:36+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004119s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011306s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T15:57:48+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002967s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009404s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T15:58:08+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002129s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007659s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T15:58:10+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002642s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010899s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T16:01:52+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004315s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019269s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+
+[ 2016-06-22T16:02:34+08:00 ] ::1 /zzjk/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002285s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011052s ]
+NOTIC: [8] Undefined index: url F:\jphpstudy\WWW\zzjk\application\Common\Controller\AppframeController.class.php 第 45 行.
+

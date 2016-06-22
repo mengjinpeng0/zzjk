@@ -185,7 +185,7 @@
 				<div class="s-mod-cur" ><span>通过完全的自主预约报名缴费体检学习，和聘请独立的私人教练进行驾驶技能学习的模式，完全自主地进行驾考<span></span></div>
                 
 			</div>
-			<a href=""><h2 class="font-large nospace text-center">独立驾考</h2></a>
+			<a href="<?php echo U('index/dljk');?>"><h2 class="font-large nospace text-center">独立驾考</h2></a>
 		</li>
 
 		<li class="s-mod-item" h="127" style="margin-left: 4% !important;
@@ -194,7 +194,7 @@
 				<div class="s-mod-def"><span style="font-size:40px;"><i class="fa fa-user"></i></span></div>
 				<div class="s-mod-cur"><span>通过预约科一科四，自主完成理论性较强的科一科四的学习。然后通过平台提供的驾校的科二科三的信息，外包服务进行实际技能和考试内容的训练。</span></div>
 			</div>
-			<h2 class="font-large nospace text-center">自主驾考</h2>
+			<a href="<?php echo U('index/zzjk');?>"><h2 class="font-large nospace text-center">自主驾考</h2></a>
 		</li>
 	     </ul>
    </div>			
@@ -210,7 +210,7 @@
 				<div class="s-mod-def" ><span style="font-size:40px;"><i class="font-large fa fa-group"></i></span></div>
 				<div class="s-mod-cur" ><span>平台提供的全方位的第三方驾培机构提供的信息描述，结合平台抓取的官方的物价标准和名单，以及用户的培训评价，对驾培机构提供的全程服务进行选择。</span></div>		
 			</div>
-			<h2 class="font-large nospace text-center">传统驾考</h2>
+			<a href="<?php echo U('index/ctjk');?>"><h2 class="font-large nospace text-center">传统驾考</h2></a>
 		</li>
 
 		<li class="s-mod-item" h="127" style="margin-left: 4% !important; width:45%;position:relative;display:inline-block;" 
@@ -308,14 +308,16 @@
                         		<?php echo ($vo["post_excrept"]); ?></a>
                         </div>
                         <div class="footer">
-                        	<div class="pull-left"><span class="meta">费用</span></div>
+                        	<div class="pull-left"><span class="meta">费用</span><?php echo ($vo["post"]); ?></div>
                         	<div class="pull-right">
 	                        	<a href="javascript:;"><i class="fa fa-eye"></i><span>
 	                        		<?php echo ($vo["post_hits"]); ?></span></a>
 								<a href="<?php echo U('article/do_like',array('id'=>$vo['object_id']));?>" class="J_count_btn">
-								<i class="fa fa-thumbs-up"></i><span class="count"><?php echo ($vo["post_like"]); ?></span></a>
-																	
+								    <i class="fa fa-thumbs-up"></i>
+								    <span class="count"><?php echo ($vo["post_like"]); ?></span>
+								</a>									
 							</div>
+
 							<div class="clearfix"></div>
 						</div>
 					</div>

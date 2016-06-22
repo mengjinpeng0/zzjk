@@ -28,26 +28,33 @@
 					<li><em>4</em>在线支付</li>
 				</ul>
 			</div>
-			<div class="server">
+			<div class="server"><center>
 			<form action="__ROOT__/index.php?g=signup&a=step3" method="post">
 					 <div class="tab-content">
                                    <div class="tab-pane active" id="one">
-                                   		<if condition="empty($avatar)">
-							            	<img src="__TMPL__/Public/images/headicon_128.png" class="headicon"/>
-							            <else/>
-							            	<img src="{:sp_get_user_avatar_url($avatar)}?t={:time()}" class="headicon"/>
-							            </if>
+                                   	
                                     
-                                   		身份证：<input type="file" onchange="avatar_upload(this)" id="avatar_uploder"  name="file" placeholder="上传身份证" /><br>
-                                   		真实姓名：<input type="text" name="uname" /> <br>
-                                   		电话号码：<input type="text" name="uphone" />
-                             
+                         <label class="control-label" >身份证：<input type="file"  name="file" placeholder="上传身份证" /><br></label>
+                          <label class="control-label" >真实姓名：<input type="text" name="uname" /> <br></label>
+                         <label class="control-label" >电话号码：<input type="text" name="uphone" /></label>
                                    </div>
-                      </div>
-
-			
-				<button type="submit" class="btn btn-primary">下一步</button>
-			</form>
+                      
+			                    <div class="control-group">
+                                   				<label class="control-label" for="input-sex">性&nbsp;&nbsp;&nbsp;别：
+                                   					<php>
+	                                   				$sexs=array("1"=>"女","2"=>"男");
+	                                   				</php>
+                                   					<select id="input-sex" name="sex">
+                                   						<foreach name="sexs" item="vo">
+                                   						    <php>$sexselected=$key==$sex?"selected":"";</php>
+                                   							<option value="{$key}" {$sexselected}>{$vo}</option>
+                                   						</foreach>
+                                   					</select>
+                                   			</label>
+                                </div>
+                     </div>
+			<button type="submit" class="btn btn-primary">下一步</button>
+			</form></center>	
 			</div>
 			</div>
 			
@@ -82,7 +89,7 @@
 				data:{},
 				success: function (data, status){
 					if(data.status==1){
-						$("#avatar_uploder").hide();
+					/*	$("#avatar_uploder").hide();
 						var $uploaded_area=$(".uploaded_avatar_area");
 						$uploaded_area.find("img").remove();
 						var $img=$("<img/>").attr("src","__UPLOAD__avatar/"+data.data.file);
@@ -93,7 +100,7 @@
 					    	setSelect: [ 0, 0, 100, 100 ],
 					    	onSelect: function(c){
 					    		$img.data("area",c);
-					    	}
+					    	}*/
 					    });
 						
 					}else{

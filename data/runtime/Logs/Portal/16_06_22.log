@@ -4,3 +4,18 @@ ERR: 模板不存在:tpl_front/focus/Portalindex/dljk.html
 [ 2016-06-22T07:40:50+08:00 ] ::1 /zzjk/index.php?g=&m=index&a=dljk
 ERR: 模板不存在:tpl_front/focus/Portal/Index/dljk.html
 
+[ 2016-06-22T16:23:49+08:00 ] ::1 /zzjk/index.php?g=portal&m=article&a=index&id=7
+ERR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+
+[ 2016-06-22T16:24:42+08:00 ] ::1 /zzjk/index.php?g=portal&m=article&a=index&id=7
+ERR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+
+[ 2016-06-22T16:24:55+08:00 ] ::1 /zzjk/index.php?g=portal&m=article&a=index&id=7
+ERR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+
+[ 2016-06-22T16:32:06+08:00 ] ::1 /zzjk/index.php?g=portal&m=article&a=index&id=7
+ERR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+
+[ 2016-06-22T16:39:30+08:00 ] ::1 /zzjk/index.php?g=portal&m=article&a=index&id=7
+ERR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+

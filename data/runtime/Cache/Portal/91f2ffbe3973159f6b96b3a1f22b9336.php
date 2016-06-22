@@ -210,7 +210,10 @@
 				<div class="s-mod-def" ><span style="font-size:40px;"><i class="font-large fa fa-group"></i></span></div>
 				<div class="s-mod-cur" ><span>平台提供的全方位的第三方驾培机构提供的信息描述，结合平台抓取的官方的物价标准和名单，以及用户的培训评价，对驾培机构提供的全程服务进行选择。</span></div>		
 			</div>
-			<a href="<?php echo U('index/ctjk');?>"><h2 class="font-large nospace text-center">传统驾考</h2></a>
+			
+				<a href="<?php echo U('index/ctjk');?>"><h2 class="font-large nospace text-center">传统驾考</h2>
+			    </a>
+		
 		</li>
 
 		<li class="s-mod-item" h="127" style="margin-left: 4% !important; width:45%;position:relative;display:inline-block;" 

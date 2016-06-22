@@ -61,7 +61,7 @@
          <span class="icon-bar"></span>
        </a>
        <a class="brand" style="margin:12px auto; font-size: 23px;" href="#"><span>锦州</span></a>
-       <a class="brand" href="/zzjk"><h3>自主驾考平台</h3></a>
+       <a class="brand" href="/zzjk/index.php"><h3>自主驾考平台</h3></a>
        <div class="nav-collapse collapse" id="main-menu">
 
 

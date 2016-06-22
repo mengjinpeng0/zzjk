@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50540
 File Encoding         : 65001
 
-Date: 2016-06-19 18:44:49
+Date: 2016-06-22 20:47:29
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -428,7 +428,7 @@ CREATE TABLE `jk_common_action_log` (
   PRIMARY KEY (`id`),
   KEY `user_object_action` (`user`,`object`,`action`),
   KEY `user_object_action_ip` (`user`,`object`,`action`,`ip`)
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COMMENT='访问记录表';
+) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COMMENT='访问记录表';
 
 -- ----------------------------
 -- Records of jk_common_action_log
@@ -451,6 +451,9 @@ INSERT INTO `jk_common_action_log` VALUES ('15', '0', 'posts1', 'Portal-Article-
 INSERT INTO `jk_common_action_log` VALUES ('16', '5', 'posts2', 'Portal-Article-index', '1', '1466264401', '222.33.163.25');
 INSERT INTO `jk_common_action_log` VALUES ('17', '5', 'posts1', 'Portal-Article-index', '4', '1466264442', '222.33.163.25');
 INSERT INTO `jk_common_action_log` VALUES ('18', '2', 'posts1', 'Portal-Article-index', '1', '1466317817', '0.0.0.0');
+INSERT INTO `jk_common_action_log` VALUES ('19', '2', 'posts7', 'Portal-Article-index', '6', '1466589970', '0.0.0.0');
+INSERT INTO `jk_common_action_log` VALUES ('20', '2', 'posts7', 'Portal-Article-do_like', '2', '1466346519', '0.0.0.0');
+INSERT INTO `jk_common_action_log` VALUES ('21', '0', 'posts8', 'Portal-Article-index', '1', '1466356310', '123.125.71.83');
 
 -- ----------------------------
 -- Table structure for jk_gnotice
@@ -849,7 +852,7 @@ CREATE TABLE `jk_posts` (
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`),
   KEY `post_date` (`post_date`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COMMENT='Portal文章表';
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COMMENT='Portal文章表';
 
 -- ----------------------------
 -- Records of jk_posts
@@ -860,6 +863,8 @@ INSERT INTO `jk_posts` VALUES ('3', '1', '', '', '2016-05-08 21:46:29', '<p>驾�
 INSERT INTO `jk_posts` VALUES ('4', '1', '', '', '2016-05-10 18:40:14', '<p>第二个驾考机构展示</p>', '第二个驾考机构展示', '第二个驾考机构展示', '1', '1', '2016-05-10 18:38:20', null, '0', null, '', '0', '{\"thumb\":\"\"}', '2', '0', '0', '0', null, null);
 INSERT INTO `jk_posts` VALUES ('5', '1', '关键词字段', '', '2016-05-10 18:45:14', '', '考试技巧测试', '考试技巧测试', '1', '1', '2016-05-10 18:40:35', null, '0', null, '', '0', '{\"thumb\":\"\"}', '2', '0', '0', '0', null, null);
 INSERT INTO `jk_posts` VALUES ('6', '1', '', '', '2016-05-10 19:35:49', '<p>驾培机构内容<br/></p>', '驾培机构', '驾培机构摘要', '1', '1', '2016-05-10 19:35:18', null, '0', null, '', '0', '{\"thumb\":\"\"}', '0', '0', '0', '0', null, null);
+INSERT INTO `jk_posts` VALUES ('7', '1', '', null, '2016-06-19 22:22:58', '<p><a name=\"OLE_LINK5\"></a><a name=\"OLE_LINK4\"></a><span style=\"font-family:宋体\">第一条</span> <span style=\"font-family:宋体\">为了规范本市人民政府规章</span>(<span style=\"font-family:宋体\">以下简称“规章”</span>)<span style=\"font-family:宋体\">的制定程序，保证规章制定质量，根据《中华人民共和国立法法》、国务院《规章制定程序条例》和《法规规章备案条例》等有关法律、法规，结合本市实际，制定本规定。</span></p><p><span style=\"font-family:宋体\">第二条</span> <span style=\"font-family:宋体\">规章的立项、起草、审查、决定、公布、解释、修改、废止、备案和监督，适用本规定。</span></p><p><span style=\"font-family:宋体\">第三条</span> <span style=\"font-family:宋体\">制定规章，应当遵循下列原则：</span></p><p>(<span style=\"font-family:宋体\">一</span>)<span style=\"font-family:宋体\">遵循立法法确定的立法原则，符合上位法的规定</span>;</p><p>(<span style=\"font-family:宋体\">二</span>)<span style=\"font-family:宋体\">体现保障公民、法人和其他组织合法权益的原则，没有法律、法规依据，不得设定减损公民、法人和其他组织权利或者增加其义务的规范</span>;</p><p>(<span style=\"font-family:宋体\">三</span>)<span style=\"font-family:宋体\">体现行政机关的职权与责任相统一的原则，在赋予有关行政机关必要的职权的同时，应当规定其行使职权的条件、程序和应承担的责任</span>;</p><p>(<span style=\"font-family:宋体\">四</span>)<span style=\"font-family:宋体\">体现法治政府和服务型政府的要求和精简、统一、效能的原则，促进政府职能向经济调节、社会管理和公共服务转变。</span></p><p><span style=\"font-family:宋体\">第四条</span> <span style=\"font-family:宋体\">规章可以就下列事项作出规定：</span></p><p>(<span style=\"font-family:宋体\">一</span>)<span style=\"font-family:宋体\">为执行法律、法规的规定需要制定规章的事项</span>;</p><p>(<span style=\"font-family:宋体\">二</span>)<span style=\"font-family:宋体\">属于本市的具体行政管理事项。</span></p><p><span style=\"font-family:宋体\">制定规章，限于城乡建设与管理、环境保护、历史文化保护等方面的事项。</span></p><p><span style=\"font-family:宋体\">第五条</span> <span style=\"font-family:宋体\">规章的名称一般称“规定”、“办法”等，但不得称“条例”。</span></p><p><span style=\"font-family:宋体\">规章应当采用条文方式表述，用语准确、简洁，内容明确、具体，除内容复杂的外，一般不分章节。</span></p><p><span style=\"font-family:宋体\">第六条</span> <span style=\"font-family:宋体\">市人民政府应当加强对规章制定工作的领导。</span></p><p><span style=\"font-family:宋体\">市人民政府法制机构具体负责规章的制定工作，履行下列职责：</span></p><p>(<span style=\"font-family:宋体\">一</span>)<span style=\"font-family:宋体\">负责拟订年度规章制定计划草案</span>;</p><p>(<span style=\"font-family:宋体\">二</span>)<span style=\"font-family:宋体\">组织起草、审查、修改、协调、论证规章草案</span>;</p><p>(<span style=\"font-family:宋体\">三</span>)<span style=\"font-family:宋体\">负责规章报送备案工作</span>;</p><p>(<span style=\"font-family:宋体\">四</span>)<span style=\"font-family:宋体\">监督检查、评估规章的执行情况</span>;</p><p>(<span style=\"font-family:宋体\">五</span>)<span style=\"font-family:宋体\">组织协调、论证规章的修改、废止工作</span>;</p><p>(<span style=\"font-family:宋体\">六</span>)<span style=\"font-family:宋体\">提出规章解释的意见</span>;</p><p>(<span style=\"font-family:宋体\">七</span>)<span style=\"font-family:宋体\">法律、法规规定的其他职责。</span></p><p><span style=\"font-size:14px;font-family:宋体\">各县</span><span style=\"font-size:14px;font-family:&#39;Calibri&#39;,sans-serif\">(</span><span style=\"font-size:14px;font-family:宋体\">市</span><span style=\"font-size:14px;font-family:&#39;Calibri&#39;,sans-serif\">)</span><span style=\"font-size:14px;font-family:宋体\">区人民政府、市人民政府各部门以及有关单位应当按照职责分工，共同做好规章草案的起草、论证和其他相关工作。</span></p><p><br/></p>', '权益保障', '权益保障内容', '1', '1', '2016-06-19 22:22:18', null, '0', null, '', '0', '{\"thumb\":\"\"}', '1', '1', '0', '0', null, null);
+INSERT INTO `jk_posts` VALUES ('8', '1', '', null, '2016-06-19 22:45:19', '<p><span style=\"font-family:宋体\">为广泛收集严重道路交通安全违法行为线索，激发市民参与维护道路交通安全的积极性，根据《中华人民共和国道路交通安全法》及相关法律法规，锦州交警支队从即日起在全市范围内开展严重道路交通违法行为有奖举报活动，具体内容公布如下：</span></p><p><span style=\"font-family:宋体\">一、有奖举报的范围及奖励标准</span></p><p><span style=\"font-family:宋体\">（一）举报无驾驶资格的驾驶人驾驶摩托车、汽车，经查证属实的，每起奖励</span>50<span style=\"font-family:宋体\">元</span>-150<span style=\"font-family:宋体\">元。</span></p><p><span style=\"font-family:宋体\">（二）举报酒后、吸食（注射）毒品后驾驶机动车的驾驶人，经查证属实的，每起奖励</span>200<span style=\"font-family:宋体\">元。</span></p><p>&nbsp; <span style=\"font-family:宋体\">（三）举报未经公安机关批准擅自运输剧毒化学品的，经查证属实的，每起奖励</span>200<span style=\"font-family:宋体\">元。</span></p><p><span style=\"font-family:宋体\">（四）举报驾驶拼装的机动车或者已达报废标准的机动车上道路行驶的，每起奖励</span>200<span style=\"font-family:宋体\">元。</span></p><p><span style=\"font-family:宋体\">（五）举报拼装、出售不符合国家安全技术标准的汽车或已达报废标准的机动车的，每起奖励</span>200<span style=\"font-family:宋体\">元。</span></p><p><span style=\"font-family:宋体\">（六）举报营运客车、校车超员的，经查证属实的，每起奖励</span>20<span style=\"font-family:宋体\">元</span>-200<span style=\"font-family:宋体\">元。</span></p><p><span style=\"font-family:宋体\">（七）举报货运机动车达到或超过核定载质量</span>30%<span style=\"font-family:宋体\">的，经查证属实的，每起奖励</span>200<span style=\"font-family:宋体\">元。</span></p><p><span style=\"font-family:宋体\">（八）举报未经批准擅自设置、移动、占用、损毁交通标志、交通标线、交通护栏、交通信号灯、交通监控等道路交通安全设施，经查证属实的，每起奖励</span>200<span style=\"font-family:宋体\">元。</span></p><p><span style=\"font-family:宋体\">（九）举报上路行驶的机动车故意挪用、遮挡、污损或者不按规定安装、悬挂机动车号牌的，每起奖励</span>20<span style=\"font-family:宋体\">元</span>-300<span style=\"font-family:宋体\">元。</span></p><p><span style=\"font-family:宋体\">二、注意事项</span></p><p><span style=\"font-family:宋体\">（一）举报人必须实名举报，举报的道路交通违法行为应当客观真实，对其举报的道路交通违法行为的真实性负责，不得捏造、歪曲事实，不得诬告、陷害他人。交警部门将对举报人的姓名等信息予以保密。</span></p><p><span style=\"font-family:宋体\">（二）举报人须向交警部门提供违法车辆的车型、车号、举报的违法行为、行驶路线、时间、地点等必要信息。</span></p><p><span style=\"font-family:宋体\">（三）对举报严重道路交通违法行为的个人</span>,<span style=\"font-family:宋体\">所举报的情况经调查情况属实，且交警部门事先并未掌握监控等相关证据的，都可兑现奖励。</span></p><p><span style=\"font-family:宋体\">（四）同一起道路交通违法行为被多人举报，且内容相同的，奖励第一举报人。</span></p><p><span style=\"font-family:宋体\">（五）举报人接到领奖通知后，应当在</span>30<span style=\"font-family:宋体\">日内凭举报人有效证件到辖区大队领取奖金。逾期未领奖金或（由于）举报人自身原因无法告知举报人的，视为放弃权利。</span></p><p><span style=\"font-family:宋体\">（六）对于骗取、冒领奖励资金，打击报复举报人的，将依法追究相关人员的法律责任。</span></p><p><span style=\"font-family:宋体\">以上内容具体执行细节由锦州市公安局交通警察支队负责解释，举报电话（市区：</span>0416-3880127<span style=\"font-family:宋体\">，</span>0416-3880119<span style=\"font-family:宋体\">；县（市）：凌海</span>0416-8123665<span style=\"font-family:宋体\">，北镇</span>0416-6622567<span style=\"font-family:宋体\">，黑山</span>0416-5522608<span style=\"font-family:宋体\">，义县</span>0416-7733300<span style=\"font-family:宋体\">）。</span></p><p><br/></p>', '关于开展严重道路交通违法行为有奖举报活动的通告', '激发市民参与维护道路交通安全的积极性。', '1', '1', '2016-06-19 22:44:26', null, '0', null, '', '0', '{\"thumb\":\"\"}', '1', '0', '1', '1', null, null);
 
 -- ----------------------------
 -- Table structure for jk_role
@@ -974,7 +979,7 @@ CREATE TABLE `jk_term_relationships` (
   `status` int(2) NOT NULL DEFAULT '1' COMMENT '状态，1发布，0不发布',
   PRIMARY KEY (`tid`),
   KEY `term_taxonomy_id` (`term_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COMMENT='Portal 文章分类对应表';
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COMMENT='Portal 文章分类对应表';
 
 -- ----------------------------
 -- Records of jk_term_relationships
@@ -985,6 +990,8 @@ INSERT INTO `jk_term_relationships` VALUES ('3', '3', '2', '0', '1');
 INSERT INTO `jk_term_relationships` VALUES ('4', '4', '2', '0', '1');
 INSERT INTO `jk_term_relationships` VALUES ('5', '5', '3', '0', '1');
 INSERT INTO `jk_term_relationships` VALUES ('6', '6', '4', '0', '1');
+INSERT INTO `jk_term_relationships` VALUES ('7', '7', '5', '0', '1');
+INSERT INTO `jk_term_relationships` VALUES ('8', '8', '1', '0', '1');
 
 -- ----------------------------
 -- Table structure for jk_terms
@@ -1032,11 +1039,12 @@ CREATE TABLE `jk_user_favorites` (
   `createtime` int(11) DEFAULT NULL COMMENT '收藏时间',
   PRIMARY KEY (`id`),
   KEY `uid` (`uid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='用户收藏表';
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='用户收藏表';
 
 -- ----------------------------
 -- Records of jk_user_favorites
 -- ----------------------------
+INSERT INTO `jk_user_favorites` VALUES ('1', '2', '权益保障', '/zzjk/index.php?g=&amp;m=article&amp;a=index&amp;id=7', null, 'posts', '7', '1466346488');
 
 -- ----------------------------
 -- Table structure for jk_users
@@ -1058,24 +1066,22 @@ CREATE TABLE `jk_users` (
   `create_time` datetime NOT NULL DEFAULT '2000-01-01 00:00:00' COMMENT '注册时间',
   `user_activation_key` varchar(60) NOT NULL DEFAULT '' COMMENT '激活码',
   `user_status` int(11) NOT NULL DEFAULT '1' COMMENT '用户状态 0：禁用； 1：正常 ；2：未验证',
-  `score` int(11) NOT NULL DEFAULT '0' COMMENT '用户积分',
+  `score` varchar(80) DEFAULT '0' COMMENT '用户积分',
   `user_type` smallint(1) DEFAULT '1' COMMENT '用户类型，1:admin ;2:会员',
   `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
   `mobile` varchar(20) NOT NULL DEFAULT '' COMMENT '手机号',
   PRIMARY KEY (`id`),
   KEY `user_login_key` (`user_login`),
   KEY `user_nicename` (`user_nicename`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COMMENT='用户表';
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='用户表';
 
 -- ----------------------------
 -- Records of jk_users
 -- ----------------------------
-INSERT INTO `jk_users` VALUES ('1', 'admin', 'c9a52fa9a65d84a9bdf17917b97d1a1db9a9b4f90968f8d7', 'admin', '754527456@qq.com', '', null, '0', null, null, '0.0.0.0', '2016-06-19 14:50:04', '2016-05-06 12:57:30', '', '1', '0', '1', '0', '');
-INSERT INTO `jk_users` VALUES ('2', 'mengdreamup_foxmail_cpm', 'c9a52fa9a65d84a9bdf17917b97d1a1db9a9b4f90968f8d7', 'mengdreamup_foxmail_cpm', 'mengdreamup@foxmail.cpm', '', null, '0', '1899-11-09', 'singnature', '60.21.206.184', '2016-06-19 12:06:31', '2016-05-06 14:25:59', '', '1', '0', '2', '0', '');
-INSERT INTO `jk_users` VALUES ('3', 'meng', 'c9a52fa9a65d84a9bdf17917b97d1a1db9a9b4f90968f8d7', 'meng', '1@2.com', '', null, '0', null, null, '127.0.0.1', '2016-05-11 21:57:11', '2016-05-06 19:05:13', '', '1', '0', '2', '0', '');
-INSERT INTO `jk_users` VALUES ('4', ' zzjk', 'c9a52fa9a65d9754ee533f25bac92e38a901ec9fb309f8d7', '', '287775334@qq.com', '', null, '0', null, null, null, '2000-01-01 00:00:00', '2000-01-01 00:00:00', '', '1', '0', '1', '0', '');
-INSERT INTO `jk_users` VALUES ('5', '123456', 'c9a52fa9a65de10adc3949ba59abbe56e057f20f883ef8d7', '123456', '2228216813@qq.com', '', null, '2', '2016-06-17', '', '222.33.163.25', '2016-06-18 23:31:06', '2016-06-18 20:48:21', '', '1', '0', '2', '0', '');
-INSERT INTO `jk_users` VALUES ('6', 'lkadmin', 'c9a52fa9a65d9754ee533f25bac92e38a901ec9fb309f8d7', '', '1@1.com', '', null, '0', null, null, '0.0.0.0', '2016-06-19 14:52:00', '2000-01-01 00:00:00', '', '1', '0', '1', '0', '');
+INSERT INTO `jk_users` VALUES ('1', 'admin', 'c9a52fa9a65d84a9bdf17917b97d1a1db9a9b4f90968f8d7', 'admin', '754527456@qq.com', '', null, '0', null, null, '0.0.0.0', '2016-06-14 21:06:57', '2016-05-06 12:57:30', '', '1', '', '1', '0', '');
+INSERT INTO `jk_users` VALUES ('2', 'mengdreamup_foxmail_cpm', 'c9a52fa9a65d84a9bdf17917b97d1a1db9a9b4f90968f8d7', '李阔', 'mengdreamup@foxmail.cpm', '123', null, '1', '2058-11-13', '开源', '0.0.0.0', '2016-06-22 16:26:33', '2016-05-06 14:25:59', '自主驾考', '1', '', '2', '0', '12345678901');
+INSERT INTO `jk_users` VALUES ('3', 'meng', 'c9a52fa9a65d84a9bdf17917b97d1a1db9a9b4f90968f8d7', 'meng', '1@2.com', '', null, '0', null, null, '127.0.0.1', '2016-05-11 21:57:11', '2016-05-06 19:05:13', '', '1', '', '2', '0', '');
+INSERT INTO `jk_users` VALUES ('4', ' zzjk', 'c9a52fa9a65d9754ee533f25bac92e38a901ec9fb309f8d7', '', '287775334@qq.com', '', null, '0', null, null, null, '2000-01-01 00:00:00', '2000-01-01 00:00:00', '', '1', '', '1', '0', '');
 
 -- ----------------------------
 -- Table structure for jk_weibo

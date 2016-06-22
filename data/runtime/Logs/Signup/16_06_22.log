@@ -1,0 +1,12 @@
+[ 2016-06-22T19:59:50+08:00 ] ::1 /zzjk/index.php?g=signup&m=index&a=step6
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'zzjk.jk_user' doesn't exist
+
+[ 2016-06-22T20:00:28+08:00 ] ::1 /zzjk/index.php?g=signup&m=index&a=step6
+ERR: 模板不存在:tpl_front/focus/Signupuser/center/exam.html
+
+[ 2016-06-22T20:19:48+08:00 ] ::1 /zzjk/index.php?g=signup&m=index&a=step6
+ERR: 模板不存在:tpl_front/focus/Signup/step7.html
+
+[ 2016-06-22T20:21:02+08:00 ] ::1 /zzjk/index.php?g=signup&m=index&a=step6
+ERR: 模板不存在:tpl_front/focus/Signupuser/center/exam.html
+

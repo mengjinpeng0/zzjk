@@ -34,7 +34,16 @@
 			</div>
 
 			<div class="install" id="log">
-				<ul id="loginner" class="unstyled"></ul>
+				  <center>  <label for="">第三方：
+                                                 	<select id="input-sex" name="score">
+                                   						
+                                   						    <option value="辽工驾校">辽工驾校</option>
+                                   							<option value="锦华驾校">锦华驾校</option>
+                                   							<option value="渤大驾校">渤大驾校</option>
+                                   						</foreach>
+                                   					</select>
+                                        </label>  
+                              </center> 
 			</div>
 			
 		</section>

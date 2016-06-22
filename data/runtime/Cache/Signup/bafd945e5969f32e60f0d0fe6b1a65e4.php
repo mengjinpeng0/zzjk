@@ -33,10 +33,20 @@
 				</ul>
 			</div>
 
-<center>  <a class="brand" href="/zzjk/index.php?g=user&m=center&a=index"><button type="submit" class="btn btn-primary">完成</button></a></center>
+<div class="install" id="log">
+				<ul id="loginner" class="unstyled">
+					<img src="/zzjk/statics//images/bank.png" alt="">
+
+				</ul>
+</div>
+			
+<center>  
+	<a class="brand" href="/zzjk/index.php?g=signup&m=index&a=step6"><button type="submit" class="btn btn-primary">完成</button></a>
+</center>
 	<script>
 		$(function() {
-			return;
+			
+			/* ajax返回数值。
 			$.ajax({
 				type : "POST",
 				url : "http://www.thinkcmf.com/service/installinfo.php",
@@ -50,7 +60,9 @@
 				dataType : 'json',
 				success : function() {
 				}
-			});
+			});*/
+              
+
 		});
 	</script>
 </body>

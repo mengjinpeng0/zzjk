@@ -68,7 +68,7 @@
          <span class="icon-bar"></span>
        </a>
        <a class="brand" style="margin:12px auto; font-size: 23px;" href="#"><span>锦州</span></a>
-       <a class="brand" href="/zzjk"><h3>自主驾考平台</h3></a>
+       <a class="brand" href="/zzjk/index.php"><h3>自主驾考平台</h3></a>
        <div class="nav-collapse collapse" id="main-menu">
 
 
@@ -123,13 +123,16 @@
                 <div class="row">
                     <div class="span3">
 	                    
+<!-- 
 <div class="list-group">
 	<a class="list-group-item" href="<?php echo u('user/center/exam');?>">
 		<h3>
 		<i class="fa fa-paste"></i> 在线模拟考试
 		</h3>
 	</a>
-</div>
+</div> 
+-->
+
 <div class="list-group">
 	<a class="list-group-item" href="<?php echo u('signup/index/index');?>">
 		<h3>
@@ -139,7 +142,9 @@
 </div>
 
 <div class="list-group">
-	<a class="list-group-item" href="<?php echo u('user/profile/edit');?>"><i class="fa fa-list-alt"></i> 修改资料</a>
+	<!-- 
+	<a class="list-group-item" href="<?php echo u('user/profile/edit');?>"><i class="fa fa-list-alt"></i> 修改资料</a> 
+    -->
 	<a class="list-group-item" href="<?php echo u('user/profile/password');?>"><i class="fa fa-lock"></i> 修改密码</a>
 	<a class="list-group-item" href="<?php echo u('user/profile/avatar');?>"><i class="fa fa-user"></i> 编辑头像</a>
 	<a class="list-group-item" href="<?php echo u('user/profile/bang');?>"><i class="fa fa-exchange"></i> 绑定账号</a>

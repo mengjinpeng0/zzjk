@@ -39,7 +39,16 @@
 			<form action="/zzjk/index.php?g=signup&a=step4" method="post">
 					 <div class="tab-content">
                                  
-                                   		驾考方式：<input type="text" name="uphone" />
+                             <center>  <label for="">驾考方式：
+                                                 	<select id="input-sex" name="user_activation_key">
+                                   						
+                                   						    <option value="自主驾考">自主驾考</option>
+                                   							<option value="独立驾考">独立驾考</option>
+                                   							<option value="传统驾考">传统驾考</option>
+                                   						</foreach>
+                                   					</select>
+                                        </label>  
+                              </center>  		
                              
                                    </div>
                       </div>

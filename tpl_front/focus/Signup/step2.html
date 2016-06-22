@@ -33,13 +33,18 @@
 					 <div class="tab-content">
                                    <div class="tab-pane active" id="one">
                                    	
-                                    
+                          <label class="control-label" >真实姓名：<input type="text" name="user_nicename" value="{$user_nicename}" /> <br></label>          
                          <label class="control-label" >身份证：<input type="file"  name="file" placeholder="上传身份证" /><br></label>
-                          <label class="control-label" >真实姓名：<input type="text" name="uname" /> <br></label>
-                         <label class="control-label" >电话号码：<input type="text" name="uphone" /></label>
+                          
+                          <label class="control-label" >身份证号：<input type="text" name="user_url" value="{$user_url}" /> <br></label>
+                         <label class="control-label" >联系电话：<input type="text" name="mobile" value="{$mobile}" /></label>
                                    </div>
                       
-			                    <div class="control-group">
+			                    
+                         <label class="control-label" >家庭住址：<input type="text" name="signature" value="{$signature}" /></label>
+                         <label class="control-label" >出生日期：<input class="J_date" type="text" name="birthday" value="{$birthday}" /></label>
+
+                         <div class="control-group">
                                    				<label class="control-label" for="input-sex">性&nbsp;&nbsp;&nbsp;别：
                                    					<php>
 	                                   				$sexs=array("1"=>"女","2"=>"男");
@@ -50,8 +55,10 @@
                                    							<option value="{$key}" {$sexselected}>{$vo}</option>
                                    						</foreach>
                                    					</select>
-                                   			</label>
-                                </div>
+                                   			    </label>
+                          </div>
+
+                   
                      </div>
 			<button type="submit" class="btn btn-primary">下一步</button>
 			</form></center>	

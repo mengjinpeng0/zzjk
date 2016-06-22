@@ -70,8 +70,6 @@
 		},"json");
 		
 	}
-
-	//适用于ajax的数据更新
 	function avatar_upload(obj){
 		var $fileinput=$(obj);
 		/* $(obj)
@@ -82,7 +80,7 @@
 		Wind.css("jcrop");
 		Wind.use("ajaxfileupload","jcrop","noty",function(){
 			$.ajaxFileUpload({
-				url:"{:U('profile/avatar_upload)}",
+				url:"{:U('profile/avatar_upload')}",
 				secureuri:false,
 				fileElementId:"avatar_uploder",
 				dataType: 'json',

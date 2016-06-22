@@ -36,28 +36,34 @@
 				</ul>
 			</div>
 			<div class="server"><center>
-			<form action="/zzjk/index.php?g=signup&a=step3" class="J_ajaxForm" method="post">
+			<form action="/zzjk/index.php?g=signup&a=step3" method="post">
 					 <div class="tab-content">
                                    <div class="tab-pane active" id="one">
                                    	
-                                    
-                                   		<label class="control-label" >身份证：<input type="file"  name="file" placeholder="上传身份证" /><br></label>
-                                   		<label class="control-label" >真实姓名：<input type="text" name="uname" /> <br></label>
-                                   		<label class="control-label" >电话号码：<input type="text" name="uphone" />
-                                         </label>
+                          <label class="control-label" >真实姓名：<input type="text" name="user_nicename" value="<?php echo ($user_nicename); ?>" /> <br></label>          
+                         <label class="control-label" >身份证：<input type="file"  name="file" placeholder="上传身份证" /><br></label>
+                          
+                          <label class="control-label" >身份证号：<input type="text" name="user_url" value="<?php echo ($user_url); ?>" /> <br></label>
+                         <label class="control-label" >联系电话：<input type="text" name="mobile" value="<?php echo ($mobile); ?>" /></label>
                                    </div>
-                      </div>
-			                    <div class="control-group">
+                      
+			                    
+                         <label class="control-label" >家庭住址：<input type="text" name="signature" value="<?php echo ($signature); ?>" /></label>
+                         <label class="control-label" >出生日期：<input class="J_date" type="text" name="birthday" value="<?php echo ($birthday); ?>" /></label>
+
+                         <div class="control-group">
                                    				<label class="control-label" for="input-sex">性&nbsp;&nbsp;&nbsp;别：
                                    					<?php $sexs=array("1"=>"女","2"=>"男"); ?>
                                    					<select id="input-sex" name="sex">
                                    						<?php if(is_array($sexs)): foreach($sexs as $key=>$vo): $sexselected=$key==$sex?"selected":""; ?>
                                    							<option value="<?php echo ($key); ?>" <?php echo ($sexselected); ?>><?php echo ($vo); ?></option><?php endforeach; endif; ?>
                                    					</select>
-                                   			</label>
-                                </div>
+                                   			    </label>
+                          </div>
 
-			<button type="submit" class="btn btn-primary J_ajax_submit_btn">下一步</button>
+                   
+                     </div>
+			<button type="submit" class="btn btn-primary">下一步</button>
 			</form></center>	
 			</div>
 			</div>

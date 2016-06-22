@@ -9,15 +9,26 @@ use Think\Db;
  */
 class IndexController extends HomeBaseController {
 	
+    protected $users_model;
     function _initialize(){
-        //parent::_initialize();
+        parent::_initialize();
+        $this->users_model=D("Common/Users");
+
         $this->check_login();
         $this->check_user();
     }
    
    
 	public function index() {
-    	$this->display(":index");
+       $userid = sp_get_current_userid();
+        $user=$this->users_model->find($userid);
+        //var_dump($user);die();
+         if ($user['coin'] == '1') {
+             $this->success('亲，您已经报完名啦！正在跳转到考试页面。',__ROOT__.'/index.php?g=user&m=center&a=exam');
+         } else {
+           $this->display(":index");
+         }
+ 	
     }
     
 
@@ -52,7 +63,10 @@ class IndexController extends HomeBaseController {
     }
 
     public function step2(){
-        
+        $userid=sp_get_current_userid();
+        $user=$this->users_model->where(array("id"=>$userid))->find();
+        $this->assign($user);
+       
      
     	$this->display(":step2");
     }
@@ -61,66 +75,96 @@ class IndexController extends HomeBaseController {
     
     public function step3(){
 
-        $this->success("提交个人信息成功！");
-    	$this->display(":step3");
+       if(IS_POST){
+            $userid=sp_get_current_userid();
+            $_POST['id']=$userid;
+            if ($this->users_model->create()) {
+
+                if ($this->users_model->save()!==false) {
+                    $user=$this->users_model->find($userid);
+                    sp_update_current_user($user);
+                   
+                } else 
+            {
+                    $this->error("保存失败！");
+                }
+            } else {
+
+                $this->error($this->users_model->getError());
+            }
+        }
+
+        /*跳转到第三个页面*/
+        $this->show('<script>
+                     alert("保存成功");
+                   </script>');
+
+        $this->display(':step3');
+    	
     }
     
 
 
     public function step4(){
 
-        //执行支付环境 也可以自己独立安装一些步骤。
-       
-            
-           /*
-            $dbconfig['DB_TYPE']="mysql";
-            $dbconfig['DB_HOST']=I('post.dbhost');
-            $dbconfig['DB_USER']=I('post.dbuser');
-            $dbconfig['DB_PWD']=I('post.dbpw');
-            $dbconfig['DB_PORT']=I('post.dbport');
-            $db  = Db::getInstance($dbconfig);
-            $dbname=strtolower(I('post.dbname'));
-            $sql = "CREATE DATABASE IF NOT EXISTS `{$dbname}` DEFAULT CHARACTER SET utf8";
-            $db->execute($sql) || $this->error($db->getError());
-            
-            $this->display(":step4");
-            
-            //创建数据表
-            $dbconfig['DB_NAME']=$dbname;
-            $dbconfig['DB_PREFIX']=trim(I('post.dbprefix'));
-            $db  = Db::getInstance($dbconfig);
-            
-            $table_prefix=I("post.dbprefix");
-            sp_execute_sql($db, "thinkcmf.sql", $table_prefix);
+        if(IS_POST){
+            $userid=sp_get_current_userid();
+            $_POST['id']=$userid;
+            if ($this->users_model->create()) {
 
-            //更新配置信息
-            sp_update_site_configs($db, $table_prefix);
-            
-            $authcode=sp_random_string(18);
-            //创建管理员
-            sp_create_admin_account($db, $table_prefix,$authcode);
-            
-            //生成网站配置文件
-            sp_create_config($dbconfig, $authcode);
-            session("_install_step",4);
-            sleep(1);
-            
-            $this->redirect("step4");*/
-            $this->display(':step4');
+                if ($this->users_model->save()!==false) {
+                    $user=$this->users_model->find($userid);
+                    sp_update_current_user($user);
+                    $this->display(':step4');
+                } else 
+            {
+                    $this->error("保存失败！");
+                }
+            } else {
 
+                $this->error($this->users_model->getError());
+            }
+        }
     }
     
     public function step5(){
-        /*if(session("_install_step")==4){
-            @touch('./data/install.lock');
-            $this->display(":step5");
-        }else{
-            $this->error("非法安装！");
-        }*/
-        $this->display(':step5');    
+        
+        
+      if(IS_POST){
+            $userid=sp_get_current_userid();
+            $_POST['id']=$userid;
+            if ($this->users_model->create()) {
+
+                if ($this->users_model->save()!==false) {
+                    $user=$this->users_model->find($userid);
+                    $rs = sp_update_current_user($user);   
+                } else 
+            {
+                    $this->error("保存失败！");
+                }
+            } else {
+
+                $this->error($this->users_model->getError());
+            }
+        }
+        
+        $this->display(':step5');
     	
     }
     
+    public function step6(){
+        $userid = sp_get_current_userid();
+        $user=$this->users_model->find($userid);
+        $user['coin'] = 1;
+        $data1 =   array('coin' => $user['coin']);
+         $rs = M('users')->where(array('id'=>$userid))->save($data1);
+           
+         $this->success('支付成功！正在跳转到考试页面！',__ROOT__.'/index.php?g=user&m=center&a=exam');
+        //$this->redirect('user/center/exam');
+    
+    }
+    
+ 
     public function testdbpwd(){
         if(IS_POST){
             $dbconfig=I("POST.");

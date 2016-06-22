@@ -30,17 +30,17 @@
                                <div class="tab-content">
                                    <div class="tab-pane active" id="one">
                                    		  <div class="span2">
-                                   		  <a href="{:U('profile/avatar')}">
+                                   		 
                                    			<if condition="empty($avatar)">
 								            <img src="__TMPL__/Public/images/headicon_128.png" class="headicon"/>
 								            <else/>
 								            <img src="{:sp_get_user_avatar_url($avatar)}" class="headicon"/>
 								            </if>
-								          </a>
+								        
 										  </div>      
 										  <div class="span3">
                                    			<div class="control-group">
-                                   				<label class="control-label" for="input-user_nicename">昵称</label>
+                                   				<label class="control-label" for="input-user_nicename">真实姓名</label>
                                    				<div class="controls">
                                    					{$user_nicename|default='未填写'}
                                    				</div>
@@ -48,34 +48,62 @@
                                    			<div class="control-group">
                                    				<label class="control-label" for="input-sex">性别</label>
                                    				<div class="controls">
+
                                    				<php>
-                                   				$sexs=array("0"=>"保密","1"=>"程序猿","2"=>"程序媛");
-                                   				
+                                   				$sexs=array("1"=>"女","2"=>"男");
                                    				</php>
                                    					{$sexs[$sex]}
+
                                    				</div>
                                    			</div>
+                                        <div class="control-group">
+                                          <label class="control-label" for="input-birthday">电话号码</label>
+                                          <div class="controls">
+                                            {$mobile|default='未填写'}
+                                          </div>
+                                        </div>
+
                                    			<div class="control-group">
-                                   				<label class="control-label" for="input-birthday">生日</label>
+                                   				<label class="control-label" for="input-birthday">出生日期</label>
                                    				<div class="controls">
                                    					{$birthday|default='未填写'}
                                    				</div>
                                    			</div>
                                    			<div class="control-group">
-                                   				<label class="control-label" for="input-user_url">个人网址</label>
+                                   				<label class="control-label" for="input-user_url">身份证号</label>
                                    				<div class="controls">
                                    					{$user_url|default='未填写'}
                                    				</div>
                                    			</div>
                                    			<div class="control-group">
-                                   				<label class="control-label" for="input-signature">个性签名</label>
+                                   				<label class="control-label" for="input-signature">家庭住址</label>
                                    				<div class="controls">
                                    					{$signature|default='未填写'}
                                    				</div>
                                    			</div>
+
+                                       <br>
+                                       <div class="control-group">
+                                          <label class="control-label" for="input-user_nicename">驾考方式</label>
+                                          <div class="controls">
+                                            {$user_activation_key|default='未选择'}
+                                          </div>
+                                        </div>
+
+                                        <br>
+                                       <div class="control-group">
+                                          <label class="control-label" for="input-user_nicename">第三方</label>
+                                          <div class="controls">
+                                            {$score|default='未选择'}
+                                          </div>
+                                        </div>
+                                      
+
                                    			<div class="control-group">
-                                   				<div class="controls">
-                                   					<a href="{:U('user/profile/edit')}" type="submit" class="btn">编辑</a>
+                                   				<div class="controls"><br><br>
+                                   				<!--   
+                                          <a href="{:U('user/profile/edit')}" type="submit" class="btn">编辑</a> -->
+                                          信息未填写部分，请在报名步骤中填写。
                                    				</div>
                                    			</div>
                                    		</div>

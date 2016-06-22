@@ -1,10 +1,11 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-	<html>
-	<head>
-		<title><?php echo ($post_title); ?> <?php echo ($site_name); ?> </title>
-		<meta name="keywords" content="<?php echo ($post_keywords); ?>" />
-		<meta name="description" content="<?php echo ($post_excerpt); ?>">
-			
+<html>
+<head>
+<title><?php echo ($site_name); ?></title>
+<meta name="keywords" content="<?php echo ($site_seo_keywords); ?>" />
+<meta name="description" content="<?php echo ($site_seo_description); ?>">
+<meta name="author" content="ThinkCMF">
+	
 	<?php $portal_index_lastnews=2; $portal_hot_articles="1,2"; $portal_last_post="1,2"; $tmpl=sp_get_theme_path(); $default_home_slides=array( array( "slide_name"=>"ThinkCMFX2.0.0发布啦！", "slide_pic"=>$tmpl."Public/images/demo/1.jpg", "slide_url"=>"", ), array( "slide_name"=>"ThinkCMFX2.0.0发布啦！", "slide_pic"=>$tmpl."Public/images/demo/2.jpg", "slide_url"=>"", ), array( "slide_name"=>"ThinkCMFX2.0.0发布啦！", "slide_pic"=>$tmpl."Public/images/demo/3.jpg", "slide_url"=>"", ), ); ?>
 	<meta name="author" content="ThinkCMF">
 	<meta charset="utf-8">
@@ -47,12 +48,10 @@
 		#main-menu-user li.user{display: none}
 	</style>
 	
-		<style>
-			#article_content img{height:auto !important}
-		</style>
-	</head>
-<body class="">
-<?php echo hook('body_start');?>
+</head>
+
+<body class="body-white" id="top">
+	<?php echo hook('body_start');?>
 <div class="navbar navbar-fixed-top">
    <div class="navbar-inner">
      <div class="container">
@@ -112,26 +111,74 @@
    </div>
  </div>
   </div>
-<div class="container tc-main">
-	<div class="row">
-		<div class="span12">
-			
-			<div class="tc-box first-box article-box">
-		    	<center>
-		    	<img src="/zzjk/statics//images/dljk.jpg" alt="">
-                </center>
-                <br>
-		    	<?php echo Comments("posts",$id);?>
-		    </div>
-		    
-		</div>
-	
-        	
-		
-		
-	</div>
-              
-<br><br><br>
+
+		<div class="container tc-main">
+                <div class="row">
+                    <div class="span3">
+	                    
+<div class="list-group">
+	<a class="list-group-item" href="<?php echo u('user/center/exam');?>">
+		<h3>
+		<i class="fa fa-paste"></i> 在线模拟考试
+		</h3>
+	</a>
+</div>
+<div class="list-group">
+	<a class="list-group-item" href="<?php echo u('signup/index/index');?>">
+		<h3>
+		<i class="fa fa-user-md"></i> 自主驾考报名
+		</h3>
+	</a>
+</div>
+
+<div class="list-group">
+	<a class="list-group-item" href="<?php echo u('user/profile/edit');?>"><i class="fa fa-list-alt"></i> 修改资料</a>
+	<a class="list-group-item" href="<?php echo u('user/profile/password');?>"><i class="fa fa-lock"></i> 修改密码</a>
+	<a class="list-group-item" href="<?php echo u('user/profile/avatar');?>"><i class="fa fa-user"></i> 编辑头像</a>
+	<a class="list-group-item" href="<?php echo u('user/profile/bang');?>"><i class="fa fa-exchange"></i> 绑定账号</a>
+	<a class="list-group-item" href="<?php echo u('user/favorite/index');?>"><i class="fa fa-star-o"></i> 我的收藏</a>
+	<a class="list-group-item" href="<?php echo u('comment/comment/index');?>"><i class="fa fa-comments-o"></i> 我的评论</a>
+</div>
+
+
+                    </div>
+                    <div class="span9">
+                           <div class="tabs">
+                               <ul class="nav nav-tabs">
+                                   <li class="active"><a href="#one" data-toggle="tab"><i class="fa fa-comments-o"></i> 我的评论</a></li>
+                               </ul>
+                               <div class="tab-content">
+                                   <div class="tab-pane active" id="one">
+                                   		<table class="table table-bordered table-striped table-hover">
+									    <thead>
+									      <tr>
+									        <th>#</th>
+									        <th>评论内容</th>
+									        <th width="150">评论时间</th>
+									        <th width="150">操作</th>
+									      </tr>
+									    </thead>
+									    <tbody>
+									    <?php if(is_array($comments)): foreach($comments as $key=>$vo): ?><tr>
+									        <td><?php echo ($vo["id"]); ?></td>
+									        <td><?php echo ($vo["content"]); ?></td>
+									        <td><?php echo ($vo["createtime"]); ?></td>
+									        <td>
+									        	<a href="/zzjk/<?php echo ($vo["url"]); ?>#comment<?php echo ($vo["id"]); ?>">查看原文</a> 
+									        	<!-- | <a class="J_ajax_dialog_btn" href="<?php echo u('user/favorite/delete_favorite',array('id'=>$vo['id']));?>" data-msg="您确定要取消收藏吗？" data-ok="" data-cacel="取消">取消收藏</a> -->
+									        </td>
+									      </tr><?php endforeach; endif; ?>
+									    </tbody>
+									  </table>
+                                   </div>
+                                   
+                                   <div class="pager"><?php echo ($pager); ?></div>
+                               </div>							
+                           </div>
+                    </div>
+                </div>
+
+		<br><br><br>
 
       
 
@@ -158,9 +205,11 @@
       <div id="backtotop"><i class="fa fa-arrow-circle-up"></i></div>
       <?php echo ($site_tongji); ?>
 
-</div>
 
-<script type="text/javascript">
+	</div>
+	<!-- /container -->
+
+	<script type="text/javascript">
 //全局变量
 var GV = {
     DIMAUB: "/zzjk/",
